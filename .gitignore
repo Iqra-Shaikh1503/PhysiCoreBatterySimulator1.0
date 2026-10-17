@@ -1,10 +1,109 @@
+
+# Frontend dependencies and build output
 node_modules/
 dist/
+build/
+coverage/
+
+# Environment variables and secrets
 .env
-.env.local
+.env.*
+!.env.example
+!.env.*.example
+.envrc
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
 backend/.venv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.tox/
+.nox/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+
+# Battery backend local data and generated artifacts
 backend/*.db
 backend/artifacts/
-__pycache__/
-.pytest_cache/
+
+# Python packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.Python
+
+# Logs and local databases
+*.log
+db.sqlite3
+db.sqlite3-journal
+*.pid
+*.rdb
+*.aof
+
+# Python tools
+.ipynb_checkpoints/
+.ipython/
+.pybuilder/
+target/
+.pytype/
+cython_debug/
+.pdm-python
+.pdm-build/
+.pixi/
+__pypackages__/
+.ruff_cache/
+.pyre/
+.dmypy.json
+dmypy.json
+
+# Documentation build output
+docs/_build/
+site/
+
+# Editors and temporary files
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+tempCodeRunnerFile.py
 *.tsbuildinfo
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Other local configuration
+local_settings.py
+instance/
+.webassets-cache/
+.scrapy/
+.abstra/
+.streamlit/secrets.toml
